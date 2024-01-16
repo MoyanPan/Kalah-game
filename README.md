@@ -1,10 +1,10 @@
 # KalahStandardStarter
 
-This is a Java project developed by Moyan Pan in the COMPSCI 701 Course with two Design Pattern followed:
+This is a Java project developed by Moyan Pan in the COMPSCI 701 Course with two Design Patterns followed:
 1. Command Pattern
-2. Memento Pattern
+2. Memento Pattern</br>
 With strictly adhere to other principles of design & Object-oriented designs such as Coding Format(e.g.camel case), SOLID PRinciples and more.
-To run this java project, add the enviroment packages - junit-3.8.2 jar and kalah-compsci701-a3-20210910.jar into the source path location in Classpath Configuration then run the project.
+To run this java project, add the environment packages - junit-3.8.2 jar and kalah-compsci701-a3-20210910.jar into the source path location in Classpath Configuration then run the project.
 
 
 ## README Contents
@@ -103,7 +103,7 @@ At any point, either player can restart the game. When this happens, it is as if
 At any point, either player can save the current state of the game. This will record the state of the board and whose turn it is. At some later point, either player can load the saved game. The game will then proceed from that point. The game can be saved multiple times, but the load will only restore from the most recent save. If a player restarts the game, any saved game is lost.
 
 ### VS Bot Player
-In this project, it support mutiple players (max.2) aganist each other or vsing a bot player.If bot player, it has injected the algorithm which provides the capability to let the bot to make the best choice in an order of Capture > AnotherTurn > Move to increase the competitive ability and funability from the game.
+In this project, it supports multiple players (max.2) against each other or vsing a bot player.If bot player, it has injected the algorithm which provides the capability to let the bot to make the best choice in an order of Capture > AnotherTurn > Move to increase the competitive ability and funability from the game.
 
 ## Repository Contents
 3. `README.md` - this file (markdown) 
