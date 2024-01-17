@@ -33,22 +33,24 @@ The specifics (format, exactly what happens when the game ends, and so on) can b
 
 An example of how one move might look like is:
 
-+----+-------+-------+-------+-------+-------+-------+----+
+<p>An example of how one move might look like is:</p>
+<pre>+----+-------+-------+-------+-------+-------+-------+----+
 | P2 | 6[ 5] | 5[ 1] | 4[ 2] | 3[ 3] | 2[ 4] | 1[ 0] | 14 |
 |    |-------+-------+-------+-------+-------+-------|    |
 |  4 | 1[ 5] | 2[ 5] | 3[ 2] | 4[ 0] | 5[ 0] | 6[ 3] | P1 |
 +----+-------+-------+-------+-------+-------+-------+----+
-prompt> Player 1's turn - Specify house number or 'q' to quit: 3
+prompt&gt; Player 1's turn - Specify house number or 'q' to quit: 3
 +----+-------+-------+-------+-------+-------+-------+----+
 | P2 | 6[ 5] | 5[ 1] | 4[ 2] | 3[ 3] | 2[ 0] | 1[ 0] | 19 |
 |    |-------+-------+-------+-------+-------+-------|    |
 |  4 | 1[ 5] | 2[ 5] | 3[ 0] | 4[ 1] | 5[ 0] | 6[ 3] | P1 |
 +----+-------+-------+-------+-------+-------+-------+----+
+</pre>
 Player P1 chooses house 3, which has two seeds in it. One of those seeds is placed in house 4 (meaning there is now 1 seed in it) and the last seed in house 5. Since house 5 was empty before that seed was placed in it and the opposing house (P2's house 2) is empty, this is a "capture", and that seed, plus the 4 seeds in P2's house 2 are placed in P1's store (5 is added to P1's store).
 
 Here is a longer example, with some moves starting from the beginning of the game.
 
-+----+-------+-------+-------+-------+-------+-------+----+
+<pre>+----+-------+-------+-------+-------+-------+-------+----+
 | P2 | 6[ 4] | 5[ 4] | 4[ 4] | 3[ 4] | 2[ 4] | 1[ 4] |  0 |
 |    |-------+-------+-------+-------+-------+-------|    |
 |  0 | 1[ 4] | 2[ 4] | 3[ 4] | 4[ 4] | 5[ 4] | 6[ 4] | P1 |
@@ -78,7 +80,7 @@ Game over
 |    |-------+-------+-------+-------+-------+-------|    |
 |  2 | 1[ 5] | 2[ 1] | 3[ 6] | 4[ 5] | 5[ 5] | 6[ 5] | P1 |
 +----+-------+-------+-------+-------+-------+-------+----+
-
+</pre>
 The functional requirements for the game are the same as for Assignment 1. There is, however, a change in the format of the prompt. This is needed to support the new features required. The prompt now looks like this:
 <pre>
 Player P1
